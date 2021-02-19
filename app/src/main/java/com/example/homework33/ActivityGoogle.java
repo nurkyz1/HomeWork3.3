@@ -19,7 +19,7 @@ public class ActivityGoogle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         toolbar2=findViewById(R.id.toolbar2);
-        toolbar2.setTitle("Введите запрос ");
+        setTitle("Введите запрос ");
         setContentView(R.layout.activity_google);
         search=findViewById(R.id.button2);
         editText= findViewById(R.id.edit_txt2);

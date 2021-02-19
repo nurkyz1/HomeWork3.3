@@ -19,7 +19,7 @@ public class ActivityContacts extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         toolbar1= findViewById(R.id.toolbar1);
-       toolbar1.setTitle("Введите номер телефона");
+        setTitle("Введите номер телефона");
         setContentView(R.layout.activity_contacts);
         contacts = findViewById(R.id.button3);
 
@@ -27,10 +27,11 @@ editText = findViewById(R.id.edit_txt1);
         contacts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String number= editText.getText().toString();
+                String number="tel:"+ editText.getText().toString();
                 Intent intent = new Intent( Intent.ACTION_DIAL, Uri.parse(number));
                 startActivity(intent);
             }
+
         });
     }
 }

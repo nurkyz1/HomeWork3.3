@@ -16,6 +16,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:navigationIcon="@drawable/ic_left"
         >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введите город"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
 
     </Toolbar>
 
